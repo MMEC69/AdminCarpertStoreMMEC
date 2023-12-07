@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "238285304749",
+    "project_id": "carpertstoremmec",
+    "storage_bucket": "carpertstoremmec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238285304749:android:d933c9d5f6c0f2679da724",
+        "android_client_info": {
+          "package_name": "cinec.edu.carpertstoremmec"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA99mdwoXnqq-UuSMD-G86eHrBcMKFdybo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238285304749:android:c9a78d3e9d5537059da724",
+        "android_client_info": {
+          "package_name": "com.example.admincarpertstoremmec"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA99mdwoXnqq-UuSMD-G86eHrBcMKFdybo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
