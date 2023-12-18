@@ -21,4 +21,11 @@
     <color name="g_red">#FF0000</color>
     <color name="g_gray500">#969899</color>
     <color name="g_orange_yellow">#F8BA00</color>
+
+    <color name="g_gray700">#666666</color>
+
+
+    <color name="g_light_blue">#ADD8E6</color>
+
+    <color name="g_green">#9BDB6E</color>
 </resources>

@@ -11,6 +11,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
@@ -40,9 +41,20 @@ class MainActivity : AppCompatActivity() {
     private val productStorage = Firebase.storage.reference
     private val firestore = Firebase.firestore
 
+    lateinit var go_back: Button
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        go_back = findViewById(R.id.goBack)
+
+        go_back.setOnClickListener {
+            startActivity(Intent(this@MainActivity, WelcomePage::class.java))
+
+        }
 
 
 
@@ -132,7 +144,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun saveProduct() {
         val name = binding.edName.text.toString().trim()
-        val category = binding.edName.text.toString().trim()
+        val category = binding.edCategory.text.toString().trim()
         val price = binding.edPrice.text.toString().trim()
         val offerPercentage = binding.offerPercentage.text.toString().trim()
         val description = binding.edDescription.text.toString().trim()
@@ -178,7 +190,11 @@ class MainActivity : AppCompatActivity() {
             )
 
             firestore.collection("Products").add(product).addOnSuccessListener {
+                binding.tvSelectedColors.setText("").toString()
+                binding.tvSelectedImages.setText("").toString()
                 hideLoading()
+                //textView4.setText(inputValue).toString()
+
             }.addOnFailureListener {
                 hideLoading()
                 Log.e("Error", it.message.toString())

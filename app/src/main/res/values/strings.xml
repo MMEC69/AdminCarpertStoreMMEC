@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AdminCarpertStoreMMEC</string>
+
+    <string name="rightAddress">If your floor is Bad</string>
+    <string name="quality">Just Purchase a carpet!!</string>
+    <string name="register_info">The best place you can browser for quality a carpets, To start by logging in or register,</string>
+    <string name="store_name">MMEC Carpets</string>
+    <string name="let_reg">Let\'s Register</string>
+    <string name="info_reg">if you have an account login</string>
+    <string name="fisrt_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
 </resources>
